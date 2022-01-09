@@ -1,0 +1,85 @@
+package Labtest1;
+import java.util.Scanner;
+public class Question1 {
+
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sc = new Scanner (System.in);
+		int n;
+		int RM1, RM2, RM3, q1, q2, q3;
+		double p1=0, p2=0, p3=0, totP, discR;
+		
+		System.out.print("Enter the number of items: ");
+		n = sc.nextInt();
+		
+		if (n==1) {
+			System.out.print("Enter the price of first item: RM");
+			RM1 = sc.nextInt();
+			System.out.print("Enter the quantity of first item: ");
+			q1= sc.nextInt();
+			p1 = RM1*q1;
+			System.out.println();
+			}
+		
+		else if (n==2) {
+			System.out.print("Enter the price of first item: RM");
+			RM1 = sc.nextInt();
+			System.out.print("Enter the quantity of first item: ");
+			q1= sc.nextInt();
+			p1 = (double) RM1*q1;
+			System.out.println();
+			
+			System.out.print("Enter the price of second item: RM");
+			RM2 = sc.nextInt();
+			System.out.print("Enter the quantity of second item: ");
+			q2= sc.nextInt();
+			p2 = (double) RM2*q2;
+			System.out.println();
+			}
+		
+		else if (n==3) {
+			System.out.print("Enter the price of first item: RM");
+			RM1 = sc.nextInt();
+			System.out.print("Enter the quantity of first item: ");
+			q1= sc.nextInt();
+			p1 = (double) RM1*q1;
+			System.out.println();
+		
+			System.out.print("Enter the price of second item: RM");
+			RM2 = sc.nextInt();
+			System.out.print("Enter the quantity of second item: ");
+			q2= sc.nextInt();
+			p2 = (double) RM2*q2;
+			System.out.println();
+			
+			System.out.print("Enter the price of third item: RM");
+			RM3 = sc.nextInt();
+			System.out.print("Enter the quantity of third item: ");
+			q3= sc.nextInt();
+			p3 = (double)RM3*q3;
+			System.out.println();
+			}
+		
+		totP = p1+p2+p3;
+		
+		if (totP < 100.00) {
+			discR = (totP*10)/100;
+			double x = totP - discR;
+		       System.out.printf("Total price       : RM%.2f" , totP);
+		       System.out.printf("Discount received : RM%.2f" , discR);
+		       System.out.printf("Price to be paid  : RM%.2f" , x);
+		       }
+		
+		if (totP > 100.00) {
+			discR = (totP*20)/100;
+			double x = totP - discR;
+		       System.out.printf("Total price       : RM%.2f%n" , totP);
+		       System.out.printf("Discount received : RM%.2f%n" , discR);
+		       System.out.printf("Price to be paid  : RM%.2f%n" , x);
+		       }	
+			}
+		}
+	
+
+
