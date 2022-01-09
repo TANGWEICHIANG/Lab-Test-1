@@ -1,0 +1,46 @@
+package Labtest1;
+import java.util.Scanner;
+public class Question2 {
+
+	private static Scanner sc;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		sc = new Scanner(System.in);
+		int sales, hr;
+		double com=0.00, wages=0.00, hrW =5.00;
+		
+		System.out.print("Enter sales\t\t:RM ");
+		sales = sc.nextInt();
+		System.out.print("Enter hours worked\t: ");
+		hr = sc.nextInt();
+		System.out.println();
+	
+		if (sales<150) {
+			wages = com + (double)hr * hrW;
+			System.out.printf("Commission\t\t:RM%.2f\n" ,com);
+			System.out.printf("Daily wages\t\t:RM%.2f\n", wages);
+		}
+		
+		else if ((sales >=150) && (sales <=300)){
+			com = (double)sales *0.05;
+			wages = com + (double)hr * hrW;
+			System.out.printf("Commission\t\t:RM%.2f\n" ,com);
+			System.out.printf("Daily wages\t\t:RM%.2f\n", wages);
+		}
+		
+		else if ((sales >=301) && (sales <=500)){
+			com = (double)sales *0.10;
+			wages = com + (double)hr * hrW;
+			System.out.printf("Commission\t\t:RM%.2f\n" ,com);
+			System.out.printf("Daily wages\t\t:RM%.2f\n", wages);
+		}
+		
+		else {
+			com = (double)sales *0.15;
+			wages = com + (double)hr * hrW;
+			System.out.printf("Commission\t\t:RM%.2f\n" ,com);
+			System.out.printf("Daily wages\t\t:RM%.2f\n", wages);
+		}
+	}
+
+}
