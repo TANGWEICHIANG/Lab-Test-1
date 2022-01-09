@@ -10,7 +10,7 @@ public class Question1 {
 		int RM1, RM2, RM3, q1, q2, q3;
 		double p1=0, p2=0, p3=0, totP, discR;
 		
-		System.out.print("Enter the number of items: ");
+		System.out.print("Enter the number of items (max.3): ");
 		n = sc.nextInt();
 		
 		if (n==1) {
@@ -64,7 +64,7 @@ public class Question1 {
 		totP = p1+p2+p3;
 		
 		if (totP < 100.00) {
-			discR = (totP*10)/100;
+			discR = totP*0.1;
 			double x = totP - discR;
 		       System.out.printf("Total price       : RM%.2f" , totP);
 		       System.out.printf("Discount received : RM%.2f" , discR);
@@ -72,7 +72,7 @@ public class Question1 {
 		       }
 		
 		if (totP > 100.00) {
-			discR = (totP*20)/100;
+			discR = totP*0.2;
 			double x = totP - discR;
 		       System.out.printf("Total price       : RM%.2f%n" , totP);
 		       System.out.printf("Discount received : RM%.2f%n" , discR);
