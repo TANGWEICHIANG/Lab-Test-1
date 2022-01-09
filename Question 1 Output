@@ -1,3 +1,25 @@
+// number of item = 1
+Enter the number of items (max.3): 1
+Enter the price of first item: RM150
+Enter the quantity of first item: 2
+
+Total price       : RM300.00
+Discount received : RM60.00
+Price to be paid  : RM240.00
+
+// number of item = 2
+Enter the number of items (max.3): 2
+Enter the price of first item: RM150
+Enter the quantity of first item: 2
+
+Enter the price of second item: RM50
+Enter the quantity of second item: 3
+
+Total price       : RM450.00
+Discount received : RM90.00
+Price to be paid  : RM360.00
+
+//number of item = 3
 Enter the number of items: 3
 Enter the price of first item: RM150
 Enter the quantity of first item: 2
