@@ -1,0 +1,27 @@
+// Sales < 150
+Enter sales		:RM 130
+Enter hours worked	: 5
+
+Commission		:RM0.00
+Daily wages		:RM25.00
+
+//(Sales >=150) && (Sales <=300)
+Enter sales		:RM 200
+Enter hours worked	: 5
+
+Commission		:RM10.00
+Daily wages		:RM35.00
+
+// (Sales >=301) && (Sales <=500)
+Enter sales		:RM 500
+Enter hours worked	: 5
+
+Commission		:RM50.00
+Daily wages		:RM75.00
+
+// Sales > 500
+Enter sales		:RM 750
+Enter hours worked	: 5
+
+Commission		:RM112.50
+Daily wages		:RM137.50
